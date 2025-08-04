@@ -1,0 +1,197 @@
+/* Question Papers Section Styles */
+.question-paper-section {
+  position: relative;
+  margin-bottom: 30px;
+  animation: qp-fadeIn 0.5s ease forwards;
+}
+
+@keyframes qp-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Semester Selector Styles - Renamed */
+.qp-semester-selector {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.qp-semester-selector label {
+  font-weight: 600;
+  color: #333;
+}
+
+.qp-semester-selector select {
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: 2px solid #9C6FE4;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%239C6FE4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  padding-right: 35px;
+}
+
+.qp-semester-selector select:hover {
+  border-color: #8A61D3;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.qp-semester-selector select:focus {
+  outline: none;
+  border-color: #7D58B8;
+  box-shadow: 0 0 0 3px rgba(156, 111, 228, 0.3);
+}
+
+/* Year Cards Container */
+.year-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Year Card Styles */
+.year-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1),
+              -3px -3px 10px rgba(255, 255, 255, 0.8);
+  border-left: 4px solid #9C6FE4;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.year-card:hover {
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15),
+              -4px -4px 12px rgba(255, 255, 255, 0.9);
+  transform: translateY(-3px);
+}
+
+.year-card.expanded {
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2),
+              -5px -5px 15px rgba(255, 255, 255, 0.8);
+}
+
+.year-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #eee;
+}
+
+.year-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+/* Expand Icon - Renamed */
+.qp-expand-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #9C6FE4;
+  transition: transform 0.3s ease;
+}
+
+.qp-expand-icon.small {
+  font-size: 1.2rem;
+}
+
+.qp-expand-icon.expanded {
+  transform: rotate(180deg);
+}
+
+/* Subjects List Styles */
+.subjects-list {
+  padding: 10px 0;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* Subject Item Styles - Renamed */
+.qp-subject-item {
+  margin: 0 10px 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.qp-subject-item:hover {
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.qp-subject-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: #f0e8ff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.qp-subject-header:hover {
+  background-color: #e5d9ff;
+}
+
+/* Exam Types Styles */
+.exam-types {
+  background-color: #fff;
+}
+
+.exam-type-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s ease;
+}
+
+.exam-type-item:hover {
+  background-color: #f8f2ff;
+}
+
+.exam-type-item:last-child {
+  border-bottom: none;
+}
+
+/* Download Icon - Renamed */
+.qp-download-icon {
+  font-size: 18px;
+  color: #9C6FE4;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .qp-semester-selector {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .qp-semester-selector select {
+    width: 100%;
+  }
+}

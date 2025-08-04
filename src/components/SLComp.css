@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  background-color: black;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  background-color: #9C6FE4;
+}
+
+.right h1{
+  font-weight: bolder;
+}
+
+.right h2{
+  font-weight: bold;
+}
+

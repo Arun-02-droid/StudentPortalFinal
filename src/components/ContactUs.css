@@ -1,0 +1,163 @@
+/* Contact Us Styling with purple theme (#9C6FE4) */
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .contact-section-wrapper {
+    transition: all 0.3s ease;
+  }
+  
+  .contact-section, .social-media-section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-section:hover, .social-media-section:hover {
+    box-shadow: 0 8px 24px rgba(156, 111, 228, 0.25);
+  }
+  
+  .contact-section h2, .social-media-section h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .contact-cards, .social-media-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .contact-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(156, 111, 228, 0.2);
+  }
+  
+  .icon-container, .social-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    background-color: rgba(156, 111, 228, 0.1);
+  }
+  
+  .contact-icon, .social-icon {
+    font-size: 24px;
+    color: #9C6FE4; /* Purple theme color */
+  }
+  
+  .contact-card h3, .social-media-card h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .contact-details p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-details a {
+    color: #9C6FE4; /* Purple theme color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-details a:hover {
+    color: #8257D7; /* Slightly darker purple for hover */
+    text-decoration: underline;
+  }
+  
+  /* Social Media Cards */
+  .social-media-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 280px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .social-media-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(156, 111, 228, 0.2);
+  }
+  
+  .social-media-card.facebook .social-icon-container {
+    background-color: rgba(156, 111, 228, 0.1);
+  }
+  
+  .social-media-card.facebook .social-icon {
+    color: #9C6FE4;
+  }
+  
+  .social-media-card.instagram .social-icon-container {
+    background-color: rgba(156, 111, 228, 0.1);
+  }
+  
+  .social-media-card.instagram .social-icon {
+    color: #9C6FE4;
+  }
+  
+  .social-media-card.linkedin .social-icon-container {
+    background-color: rgba(156, 111, 228, 0.1);
+  }
+  
+  .social-media-card.linkedin .social-icon {
+    color: #9C6FE4;
+  }
+  
+  .social-media-card p {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .visit-link {
+    display: inline-block;
+    color: #9C6FE4; /* Purple theme color */
+    font-weight: 500;
+    border-bottom: 1px solid #9C6FE4;
+    padding-bottom: 2px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .social-media-card:hover .visit-link {
+    color: #8257D7; /* Slightly darker purple for hover */
+    border-color: #8257D7;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contact-cards, .social-media-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .contact-card, .social-media-card {
+      width: 100%;
+      max-width: 400px;
+    }
+  }

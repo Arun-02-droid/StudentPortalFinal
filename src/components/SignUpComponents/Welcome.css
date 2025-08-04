@@ -1,0 +1,94 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.welcome-section {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #9C6FE4;
+  color: white;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Text Styling - Always Visible */
+.welcome-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  opacity: 1; /* Always visible */
+  animation: fadeInText 1.5s ease-in-out forwards, scaleText 2s ease-in-out forwards;
+}
+
+/* Ensure Text Remains Visible */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth Scaling Effect */
+@keyframes scaleText {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Image Styling - Always Visible */
+.welcome-image {
+  width: 450px;
+  height: auto;
+  display: block;
+  margin-top: 20px; /* Space between text & image */
+  opacity: 1; /* Always visible */
+  animation: fadeInImage 2s ease-in-out forwards;
+}
+
+/* Image Fade-in Animation */
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .welcome-text {
+    font-size: 60px;
+  }
+  
+  .welcome-image {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welcome-text {
+    font-size: 40px;
+  }
+  
+  .welcome-image {
+    width: 250px;
+  }
+}

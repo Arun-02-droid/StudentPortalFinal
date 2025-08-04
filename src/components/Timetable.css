@@ -1,0 +1,178 @@
+.timetable-container {
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .timetable-container.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .timetable-container.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .timetable-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .timetable {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2),
+                -5px -5px 15px rgba(255, 255, 255, 0.8);
+    border-left: 5px solid #9C6FE4;
+    overflow-x: auto;
+  }
+  
+  .timetable-grid {
+    display: grid;
+    grid-template-columns: 100px repeat(8, 1fr);
+    gap: 2px;
+  }
+  
+  .timetable-header-cell, .timetable-cell {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .timetable-header-cell {
+    background-color: #9C6FE4;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .day-cell {
+    background-color: #7D58B8;
+  }
+  
+  .time-cell {
+    background-color: #8A61D3;
+    cursor: pointer;
+  }
+  
+  .empty-cell {
+    background-color: #6E51A9;
+  }
+  
+  .timetable-cell {
+    background-color: white;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timetable-cell:hover {
+    transform: scale(1.02);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .timetable-cell.has-content {
+    background-color: #f0e8ff;
+  }
+  
+  .cell-content {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    word-break: break-word;
+  }
+  
+  .cell-edit-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .cell-edit-container input {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #9C6FE4;
+    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .cell-edit-container input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(156, 111, 228, 0.3);
+  }
+  
+  .cell-actions {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .save-btn, .delete-btn {
+    padding: 2px 8px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+  }
+  
+  .save-btn {
+    background-color: #9C6FE4;
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background-color: #8A61D3;
+  }
+  
+  .delete-btn {
+    background-color: #ff6b6b;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff5252;
+  }
+  
+  .timetable-help {
+    margin-top: 15px;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .timetable-help p {
+    margin: 5px 0;
+  }
+  
+  /* Make the timetable responsive */
+  @media (max-width: 768px) {
+    .timetable-grid {
+      grid-template-columns: 80px repeat(8, 1fr);
+      font-size: 0.9rem;
+    }
+    
+    .timetable-header-cell, .timetable-cell {
+      padding: 8px 5px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .timetable {
+      padding: 10px;
+    }
+    
+    .timetable-grid {
+      grid-template-columns: 70px repeat(8, minmax(70px, 1fr));
+      font-size: 0.8rem;
+    }
+  }

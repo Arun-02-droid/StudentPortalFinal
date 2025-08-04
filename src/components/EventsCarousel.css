@@ -1,0 +1,111 @@
+/* .events-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .events-section h2 {
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .events-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .event-card {
+    display: flex;
+    flex: 1;
+  }
+  
+  .event-image {
+    width: 180px;
+    height: 120px;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .event-content {
+    flex: 1;
+  }
+  
+  .event-content h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .event-date {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .event-action-btn {
+    background-color: #4a6fdc;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+  }
+  
+  .event-action-btn:hover {
+    background-color: #3a5cc7;
+  }
+  
+  .carousel-btn {
+    background-color: #eee;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: #666;
+    transition: background-color 0.2s;
+  }
+  
+  .carousel-btn:hover {
+    background-color: #ddd;
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .indicator.active {
+    background-color: #4a6fdc;
+  } */
